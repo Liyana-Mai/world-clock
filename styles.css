@@ -5,8 +5,9 @@ body {
 
 .container {
     max-width: 600px;
-    margin: 00px auto;
+    margin: 60px auto;
     background: #ffff;
+    opacity: 0.8;
     padding: 50px;
     box-shadow: 10px 1px 5px rgba(100,100,111,0.2);
     border-radius: 10px;
@@ -20,7 +21,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    border-bottom: 1px dotted rgba(0,0,0,0.2)
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1)
 }
 
 select {
@@ -29,6 +30,7 @@ select {
     padding: 10px;
     border-radius: 4px;
 }
+
 .date {
     opacity: 0.6;
 }
@@ -51,7 +53,10 @@ h1 {
 
 footer {
     text-align: center;
-    padding-top: 20px;
     font-size: 15px;
-    color: rgb(65, 63, 63);
+    color: white;
+}
+
+a {
+    color: rgb(211, 228, 57);
 }
