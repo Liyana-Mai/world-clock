@@ -1,43 +1,108 @@
 body {
-    background-color: #7db6da;
+    background-color: #267F53;
     font-family: sans-serif;
+    margin: 60px;
+
 }
 
 .container {
     max-width: 600px;
     margin: 60px auto;
-    background: #ffff;
-    opacity: 0.8;
+    background: #FFFF;
+    opacity: 1;
     padding: 50px;
-    box-shadow: 10px 1px 5px rgba(100,100,111,0.2);
+    box-shadow: 10px 1px 5px rgba(100,100,111,0.4);
     border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #267F53;
 }
 
 h2 {
     margin: 0 0 7px;
     font-size: 20px;
 }
-.city {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.1)
-}
 
 select {
     display: block;
     width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
+    border: 1px solid;
 }
+
+.display {
+    color: #267F53;
+}
+
+.search-container {
+    display: flex;
+    gap: 9px; 
+    align-items: center;
+}
+
+#city-search {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid ;
+}
+.search_city h2{
+    margin: 0 0 7px;
+    font-size: 20px;
+}
+
+#placeholder {
+    color:#267F53;
+}
+
+.btn {
+    display: inline;
+    background-color:#267F53;
+    color: white;
+    box-shadow: none;
+    font-size: 12px;
+    padding: 2%;
+    width: 10%;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+.select-city{
+    color:#267F53;
+}
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+}
+
+.user-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+
 
 .date {
     opacity: 0.6;
+    color: #267F53;
 }
 
 .time {
     font-size: 30px;
     font-weight: bold;
+    color: #267F53;
 }
 
 .time small {
@@ -47,13 +112,11 @@ select {
 }
 
 
-h1 {
-    text-align: center;
-}
 
 footer {
     text-align: center;
     font-size: 15px;
+    font-family: monospace;
     color: white;
 }
 

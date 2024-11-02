@@ -11,14 +11,19 @@
 </head>
 <body>
     <div class="container">
-    <h1>Zulu-Time World Clock</h1>
-        <select>
+    <h1>Zulu-Time (World-Clock)</h1>
+        <select class="select-city" id="city-select">
             <option value="">Select a city...</option>
-            <option value="">Cape Town</option>
-            <option value="">London</option>
-            <option value="">Tokyo</option>
-            <option value="">Aspen</option>
+            <option value="Europe/Paris">Paris</option>
+            <option value="America/Los_Angeles">Los Angeles</option>
+            <option value="Asia/Dubai">Dubai</option>
         </select>
+
+
+    <div class="search-container">
+    <input class="search_city" type="text" id="city-search" placeholder="Search for a city (e.g., London)" style="color:#267F53;">
+    <button class="btn" onclick="searchCity()">Search</button>
+    </div>
 
         <div class="city" id="doha">
             <div>
@@ -27,19 +32,42 @@
         </div>
             <div class="time"></div>
         </div>
-    
-            <div class="city" id="new-york">
-                <div>
+
+        
+        <div class="city" id="new-york">
+            <div>
                 <h2>New York</h2>
                 <div class="date"></div>
             </div>
-                <div class="time"></div>
-            </div>
+            <div class="time"></div>
         </div>
+
+        <div class="city" id="tokyo">
+            <div>
+            <h2>Tokyo</h2>
+            <div class="date"></div>
+        </div>
+            <div class="time"></div>
+        </div>
+
+        <div class="city" id="user-location">
+            <div>
+            <h2>Your Current Location</h2>
+            <div class="date"></div>
+        </div>
+            <div class="time"></div>
+        </div>
+
+        <div class="display" id="homepage-link" style="display: none;" style="color:#267F53;">
+            <a href="index.html">Return to homepage</a>
+        </div>
+
+        </div>
+        
       
     
     <footer>
-        This project was coded by <strong>Liyana Maisela</strong>, opensourced on
+        This project was coded with 🤍 by <strong>Liyana Maisela</strong>, opensourced on
          <a href="https://github.com/Liyana-Mai/world-clock" target="_blank">Github</a> and hosted on 
          <a href="https://zulu-time.netlify.app/" target="_blank">Netlify</a>
     </footer>
